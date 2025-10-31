@@ -42,7 +42,22 @@ namespace calculator
                 Console.WriteLine("Для выхода нажмите любую клавишу...");
                 Console.ReadKey();
             }
-
+            else if (sign == '/')
+            {
+                if (two == 0)
+                {
+                    Console.WriteLine("Ошибка. Делитель не может быть равным нулю.");
+                    Console.WriteLine("Для выхода нажмите любую клавишу...");
+                    Console.ReadKey();
+                }
+                else
+                {
+                    result = one / two;
+                    Console.WriteLine("Частное ваших чисел равна " + result);
+                    Console.WriteLine("Для выхода нажмите любую клавишу...");
+                    Console.ReadKey();
+                }
+            }
         }
 
     }
