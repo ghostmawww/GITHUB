@@ -1,0 +1,32 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Security.Policy;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace calculator
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            float one, two, result;
+            char sign;
+            Console.WriteLine("Добро пожаловать в калькулятор. Вам нелбходимо ввести первое число, затем знак действия(+,-,*,/), которое хотите совершить и второе число.");
+            Console.Write("Введите первое число: ");
+            one = Convert.ToSingle(Console.ReadLine());
+            Console.Write("Введите знак действия : ");
+            sign = Convert.ToChar(Console.ReadLine());
+            Console.Write("Введите Второе число: ");
+            two = Convert.ToSingle(Console.ReadLine());
+            
+
+
+        }
+            
+
+        
+
+    }
+}
